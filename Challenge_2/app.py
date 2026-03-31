@@ -14,12 +14,14 @@ It recommends the most statistically likely "Next-Best" medicines based on a pat
 factoring in context like underlying chronic illnesses (e.g. Diabetes).
 """)
 
+# Resolve paths relative to THIS script's directory (works locally and on Streamlit Cloud)
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # --- HELPER FUNCTIONS ---
 @st.cache_data(show_spinner=False)
 def load_model():
-    # Handle both zipped (GitHub) and unzipped (local) versions
-    json_path = "markov_transitions.json"
-    zip_path = "markov_transitions.zip"
+    json_path = os.path.join(SCRIPT_DIR, "markov_transitions.json")
+    zip_path = os.path.join(SCRIPT_DIR, "markov_transitions.zip")
     
     if not os.path.exists(json_path):
         if os.path.exists(zip_path):
