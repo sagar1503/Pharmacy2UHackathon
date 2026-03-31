@@ -272,13 +272,6 @@ The main notebook (`Pharmacy2U_Project_A.ipynb`) reproduces the entire workflow:
 - **NDC (National Drug Code):** [https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory](https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory)
 - **Codebook (column definitions)**: https://www.cms.gov/files/document/de-10-codebook.pdf-0
 
----
-
-## 📧 Contact & Acknowledgments
-
-**Hackathon:** Pharmacy2U2‑day Hackathon  
-**Challenge:** A – Late Prescription Refill Risk  
-**Data:** CMS DE‑SynPUF (synthetic, for educational use)
 
 ---
 
